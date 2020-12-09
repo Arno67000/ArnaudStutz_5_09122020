@@ -1,0 +1,23 @@
+.teddyNb {
+    margin-left: 93%;
+    height: 1.6em;
+    width: 3em;
+    text-align: center;
+    border-radius: 15px;
+    padding: 1%;
+    margin-top: 2%;
+    @include phone {
+        margin-left: 80%;
+    }
+    @include tablette {
+        margin-left: 80%;
+    }
+}
+
+.productNb {
+    height: 1.6em;
+    width: 4em;
+    text-align: center;
+    border-radius: 15px;
+    padding: 1%;
+}

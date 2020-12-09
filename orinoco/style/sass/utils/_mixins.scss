@@ -1,0 +1,12 @@
+/*MIXINS FOR RESPONSIVE*/
+@mixin tablette {
+    @media (min-width: map-get($map: $breakpoints, $key: "tablette-min")) and (max-width: map-get($map: $breakpoints, $key: "tablette-max")) {
+        @content;
+    }
+}
+@mixin phone {
+    @media (max-width: map-get($map: $breakpoints, $key: "phone-max")) {
+        @content;
+    }
+    
+}

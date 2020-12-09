@@ -1,0 +1,36 @@
+.payed {
+    width: 90%;
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: auto;
+    font-size: 1.2em;
+    @include tablette {
+        font-size: 1em;
+        margin-bottom: 5%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    @include phone {
+        height: auto;
+        font-size: 0.8em;
+        margin-bottom: 5%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+.title__recap {
+    @include tablette {
+        font-size: 1em;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    @include phone {
+        height: auto;
+        font-size: 0.8em;
+        margin-top: 10%;
+    }
+}

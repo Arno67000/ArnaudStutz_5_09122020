@@ -1,0 +1,54 @@
+.vignette-produit {
+    height: 30em;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    padding: 0;
+    margin-bottom: 1%;
+    @include phone {
+        flex-direction: column;
+        height: auto;
+    }
+    @include tablette {
+        flex-direction: column;
+        height: auto;
+    }
+    &__picture {
+        width: 48%;
+        border: 1px solid $colour-secondary;
+        border-radius: $rad 0 0 $rad;
+        @include phone {
+            width: 100%;
+            border-radius: 0;
+        }
+        @include tablette {
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+    &__description{
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 1em;
+        border: 1px solid $colour-secondary;
+        border-radius: 0 $rad $rad 0;
+        @include phone {
+            width: 100%;
+            border-radius: 0 0 $rad $rad;
+            padding-bottom: 2%;
+            font-size: 0.8em;
+        }
+        @include tablette {
+            width: 100%;
+            border-radius: 0 0 $rad $rad;
+            padding-bottom: 2%;
+        }
+    }
+}
+
+#ajout {
+    line-height: 1.5em;
+}
+

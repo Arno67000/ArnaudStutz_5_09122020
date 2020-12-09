@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="robots" content="noindex, follow"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Orinoco, votre panier d'achat"/>
+        <title>Votre panier</title>
+
+        <link rel="stylesheet" type="text/css" href="../style/css/style.css"/>
+        <link rel="shortcut icon" type="image/png" href="../assets/images/logoshop.PNG"/>
+
+        <script src="https://kit.fontawesome.com/3c2893d5d3.js" crossorigin="anonymous"></script>
+
+        <script src="../js/apiFetch.js" defer></script>
+        <script src="../js/panier.js" defer></script>
+        <script src="../js/clientBuilder.js" defer></script>
+        <script src="../js/pageBuilders.js" defer></script>
+        <script src="../js/functions.js" defer></script>
+
+    </head>
+
+    <body>
+        <div class="page">
+            <header>
+                <div class="logo"><img src="../assets/images/logo-orinoco.PNG" alt="logo Orinoco"/></div>
+                <nav>
+                    <a href="http://127.0.0.1:5500/orinoco/index.html" id="return" class="button button--panier">Continuer mes achats</a>
+                </nav>
+            </header>
+
+            <main>
+                <div class="title">
+                    <h1>Votre panier</h1>
+                </div>
+                <article>
+                    <div class="panier">
+                        <div class="panier__result">
+                            <div id="list" class="panier__result--list">
+                    
+                            </div>     
+                            <p class="bold">Montant total TTC : <span id="total">0</span> €</p>
+                            <button class="button button--submit" id="reset">Vider mon panier</button>
+                        </div>
+                        <div class="panier__form">
+                            <form class="panier__form--field">
+                                <p>
+                                    <label for="lastName"><span class="required">* </span>Nom : </label>
+                                    <input type="text" id="lastName" required  maxlength="20" placeholder="Votre nom" class="panier__form--input"/>
+                                </p>
+                                <p>
+                                    <label for="firstName"><span class="required">* </span>Prénom : </label>
+                                    <input type="text" id="firstName" required maxlength="15" placeholder="Votre prénom" class="panier__form--input"/>
+                                </p>
+                                <p>
+                                    <label for="address"><span class="required">* </span>Adresse : </label>
+                                    <input type="text" id="address" required maxlength="35" placeholder="Votre adresse" class="panier__form--input"/>
+                                </p>
+                                <p>
+                                    <label for="city"><span class="required">* </span>Ville : </label>
+                                    <input type="text" id="city" required maxlength="20" placeholder="Votre ville" class="panier__form--input"/>
+                                </p>
+                                <p>
+                                    <label for="email"><span class="required">* </span>E-mail : </label>
+                                    <input type="email" id="email" required placeholder="adresse@exemple.fr" class="panier__form--input"/>
+                                </p>
+                                <p class="required">Les champs marqués * sont obligatoires.</p>
+                                <p>
+                                    <button id="send" class="button button--submit">Valider ma commande</button>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+            </main>
+
+            <footer>
+                <div class="logo"><img src="../assets/images/logo-orinoco.PNG" alt="logo Orinoco"/></div>
+                <div class="links">
+                    <a class="social" href="#" rel="nofollow" aria-label="Lien Twitter"><span class="fa fa-twitter icon-md"></span></a>
+                    <a class="social" href="#" rel="nofollow" aria-label="Lien Facebook"><span class="fa fa-facebook icon-md"></span></a>
+                    <a class="social" href="#" rel="nofollow" aria-label="Lien Instagram"><span class="fa fa-instagram icon-md"></span></a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

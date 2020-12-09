@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="robots" content="noindex, follow"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Votre ours en peluche à personnaliser"/>
+        <title>Orinoco, page de présentation du produit.</title>
+
+        <link rel="stylesheet" type="text/css" href="../style/css/style.css"/>
+        <link rel="shortcut icon" type="image/png" href="../assets/images/logoshop.PNG"/>
+
+        <script src="https://kit.fontawesome.com/3c2893d5d3.js" crossorigin="anonymous"></script>
+
+        <script src="../js/apiFetch.js" defer></script>
+        <script src="../js/produit.js" defer></script>
+        <script src="../js/pageBuilders.js" defer></script>
+        <script src="../js/functions.js" defer></script>
+
+    </head>
+
+    <body>
+        <div class="page">
+            <header>
+                <div class="logo"><img src="../assets/images/logo-orinoco.PNG" alt="logo Orinoco"/></div>
+                <nav>
+                    <a href="http://127.0.0.1:5500/orinoco/index.html" class="button button--panier" id="back">Continuer mes achats</a>
+                    <a id="panier" href="http://127.0.0.1:5500/orinoco/pages/panier.html" class="button button--panier">
+                        <div class="nb-articles" id="nb-products">0</div>
+                        <div class="chariot">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>                        
+                        <p>Mon panier</p>
+                    </a>
+                </nav>
+            </header>
+
+            <main>
+                <div class="title">
+                    <h1>Votre ours en peluche fait main</h1>
+                </div>
+                <article>
+                    <div class="vignette-produit">
+                        <div class="vignette-produit vignette-produit__picture">
+                            <picture>
+                                <img src="#" alt="photo teddy-bear" id="ours__imageUrl"/>
+                            </picture>
+                        </div>
+                        <div class="vignette-produit vignette-produit__description">
+                            <div id="ours__id" class="off"></div>
+                            <h2 id="ours__name">#(nom de l'ours)</h2>
+                            <p>Prix : <span class="price" id="ours__price">#(price)</span></p>
+                            <p id="ours__description">#(description)</p>
+                            <form method="POST" action="#">
+                                <p>
+                                    <label for="productNb">Nombre d'ours: </label>
+                                    <input type="number" name="productNb" id="productNb" class="productNb" min="1" value="1" required/>
+                                </p>
+                                <p id="colorArea">
+                                </p>
+                                <a class="button button--submit" href="http://127.0.0.1:5500/orinoco/pages/panier.html" id="ajout">Ajouter au panier</a>
+                            </form>
+                        </div>
+                    </div> 
+                </article>
+            </main>
+
+            <footer>
+                <div class="logo"><img src="../assets/images/logo-orinoco.PNG" alt="logo Orinoco"/></div>
+                <div class="links">
+                    <a class="social" href="#" rel="nofollow" aria-label="Lien Twitter"><span class="fa fa-twitter icon-md"></span></a>
+                    <a class="social" href="#" rel="nofollow" aria-label="Lien Facebook"><span class="fa fa-facebook icon-md"></span></a>
+                    <a class="social" href="#" rel="nofollow" aria-label="Lien Instagram"><span class="fa fa-instagram icon-md"></span></a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

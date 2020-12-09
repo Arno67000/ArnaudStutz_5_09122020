@@ -1,0 +1,44 @@
+body {
+    background-color: $colour-primary;
+    margin: auto;
+    width: 100%;
+    @include phone {
+        width: 90%;
+    }
+    @include tablette {
+        width: 90%;
+    }
+}
+
+main {
+    width: 99%;
+    margin: auto;
+    border-radius: $rad;
+    @include phone {
+        border-radius: 0;
+    }
+    @include tablette {
+        border-radius: 0;
+    }
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    padding-left: 5%;
+}
+
+form, select {
+    width: 60%;
+    font-family: 'Courier New', serif;
+    color: black;
+    text-align: left;
+}
+.off {
+    display: none;
+}

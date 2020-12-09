@@ -1,0 +1,19 @@
+/*COLORS*/
+$colour-primary: #ffffff;
+$colour-secondary: #eae1d8;
+$colour-tertiary: #a57e52;
+$colour-extra: rgba(18, 140, 145,0.6);
+$colour-extra-opaque: rgba(18,140,145);
+
+$colour-sec-shadow: darken($colour-secondary, 10%);
+
+/*RADIUS*/
+$rad: 20px;
+
+/* BREAKPOINTS FOR RESPONSIVE */
+
+$breakpoints : (
+    "tablette-min": 760px,
+    "tablette-max": 1024px,
+    "phone-max": 759px,
+);
