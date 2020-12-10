@@ -32,9 +32,11 @@ alertFormMail = function(elt) {
 };
 
 validForm = function(elt) {
-    let valid = document.createElement("i");
-    valid.setAttribute("class", "fas fa-check");
+    let valid = document.createElement("span");
+    let validate = document.createElement("i");
+    validate.setAttribute("class", "fas fa-check");
     elt.insertAdjacentElement('afterend', valid);
+    valid.appendChild(validate);
     elt.addEventListener("focus", function() {
         valid.remove();
     });

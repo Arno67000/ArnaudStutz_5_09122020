@@ -48,7 +48,7 @@ let postOrder = async function() {
             if (typeof serverResponse != "undefined") {
                 localStorage.setItem("orderId",serverResponse.orderId);
                 localStorage.setItem("custName", serverResponse.contact.firstName);
-                window.location.replace("http://127.0.0.1:5500/orinoco/pages/recap.html");
+                window.location.replace("./recap.html");
             }
             else {
                 console.log(serverResponse);

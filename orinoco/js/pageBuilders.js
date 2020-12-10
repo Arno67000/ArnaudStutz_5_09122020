@@ -1,14 +1,11 @@
 //Fonction de création de la page index.html
 function indexFill() {
     for (let i=0; i<ours.length; i++) {
-        //Gestion des paramètres URL envoyés par les liens vignettes
-        let urlProduit = new URL("http://127.0.0.1:5500/orinoco/pages/produit.html");
-        urlProduit.searchParams.set("id",ours[i]._id);
         
         //Création des vignettes contenant les articles
         let article = document.getElementById("main");
         let link = document.createElement("a");
-        link.setAttribute("href", urlProduit);
+        link.setAttribute("href", `./pages/produit.html?id=${ours[i]._id}`);
         link.setAttribute("class", "vignette");
         link.setAttribute("id", [i]);
         article.appendChild(link);
